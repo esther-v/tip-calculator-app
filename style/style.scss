@@ -1,0 +1,56 @@
+@import "./colors";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+    background: $light-cyan;
+}
+
+h1{
+    color: $very-dark-cyan;
+    letter-spacing: 8px;
+    font-size: 26px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    background: $white;
+    padding: 20px;
+    border-radius: 10px;
+
+    .box-button{
+        button{
+            background: $very-dark-cyan;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            color: $white;
+            width: 60px;
+            &:hover{
+                background: $strong-cyan;
+                color: $very-dark-cyan;
+            }
+        }
+       
+    }
+    .box-resultats{
+        width: 50%;
+        background: $very-dark-cyan;
+        color: $white;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+
