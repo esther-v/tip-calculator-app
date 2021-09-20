@@ -19,23 +19,30 @@
   <div class="container">
     <div class="box-donnees">
       <p>Bill</p>
-      <input type="text" placeholder="$"></input>
+      <input class="bill" type="number" placeholder="0"></input>
       <p>Select Tip %</p>
       <div class="box-button">
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button></button>
+        <button class="tip-calc" value="5" data-tip-setter=true>5%</button>
+        <button class="tip-calc" value="10" data-tip-setter=true>10%</button>
+        <button class="tip-calc" value="15" data-tip-setter=true>15%</button>
+        <button class="tip-calc" value="25" data-tip-setter=true>25%</button>
+        <button class="tip-calc" value="50" data-tip-setter=true>50%</button>
+        <input class="tip-calc-custom" value="" type="text" placeholder="Custom">
       </div>
       <p>Number of people</p>
-      <input type="text">
+      <input class="people" type="text">
     </div>
     <div class="box-resultats">
-      <p>Tip-amount</p>
-      <p>Total</p>
-      <button>Reset</button>
+      <div class="box-tip-amount">
+        <p>Tip-amount <br> /pers</p>
+        <span class="tip_amount">$0.0</span>
+      </div>
+      <div class="box-total-person">
+        <p>Total <br>/pers</p>
+        <span class="bill_amount">$0.0</span>
+      </div>
+      
+      <button class="reset" type="button" disabled>Reset</button>
     </div>
     
   </div>
@@ -46,5 +53,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/esther-v">Esteva</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>

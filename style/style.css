@@ -40,12 +40,19 @@ h1 {
   background: #26c0ab;
   color: #00494d;
 }
+.container .box-button .btn-active {
+  background: blue;
+}
 .container .box-resultats {
   width: 50%;
   background: #00494d;
   color: white;
   padding: 15px;
   border-radius: 8px;
+}
+.container .box-resultats .box-tip-amount, .container .box-resultats .box-total-person {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
