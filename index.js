@@ -2,7 +2,7 @@ const tipCalculator = () => {
     //variables staying private
     let bill = 0;
     let tipPercent = 0;
-    // at least one person has to pay the bille
+    // at least one person has to pay the bill
     let nOfPeople = 1;
     let lastActiveBtn = '';
 
