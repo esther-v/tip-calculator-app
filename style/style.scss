@@ -21,6 +21,7 @@ h1{
     color: $very-dark-cyan;
     letter-spacing: 8px;
     font-size: 26px;
+    font-weight: lighter;
 }
 
 .container{
@@ -29,35 +30,114 @@ h1{
     background: $white;
     padding: 20px;
     border-radius: 10px;
-
-    .box-button{
-        
-        button{
-            background: $very-dark-cyan;
-            border: none;
-            border-radius: 3px;
-            padding: 5px 10px;
-            color: $white;
-            width: 60px;
-            &:hover{
-                background: $strong-cyan;
-                color: $very-dark-cyan;
-            }
+    width: 650px;
+    input{
+        background: $light-grayish-cyan;
+        font-family: 'Space Mono', monospace;
+        border: none;
+        border-radius: 3px;
+        width: 100%;
+        height: 35px;
+        padding: 5px;
+        &:focus{
+            outline: 2px solid #26c0ab;
         }
-        .btn-active {
-            background: blue;   
-        }
-       
     }
+    .box-donnees{
+        width: 50%;
+        padding: 10px;
+        p{
+            margin-bottom: 5px;
+        }
+        p:not(.enter-bill-amount){
+            margin-top: 20px;
+        }
+        .box-button{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            input{
+                width: 60px;
+                text-align: center;
+                cursor: pointer;
+                font-family: 'Space Mono', monospace;
+                font-weight: bold;
+                &:hover{
+                    border: 1px solid $strong-cyan;
+                }
+            }
+            button{
+                cursor: pointer;
+                background: $very-dark-cyan;
+                border: none;
+                border-radius: 3px;
+                padding: 5px 10px;
+                color: $white;
+                width: 60px;
+                font-family: 'Space Mono', monospace;
+                font-weight: bold;
+                &:hover{
+                    background: $strong-cyan;
+                    color: $very-dark-cyan;
+                }
+            }
+            .btn-active {
+                background: $strong-cyan;  
+                color: $very-dark-cyan;
+            } 
+        }
+    }
+ 
     .box-resultats{
         width: 50%;
         background: $very-dark-cyan;
         color: $white;
-        padding: 15px;
+        padding: 35px;
         border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .box-amounts{
+            p{
+                font-size: 15px;
+                line-height: 15px;
+                span{
+                    font-size: 13px;
+                    color: $light-cyan;
+                    font-weight: normal;
+                }
+            }
+            .box-tip-amount{
+                margin-bottom: 20px;
+            }
+            span{
+                font-size: 30px;
+                color: $strong-cyan;
+            }
+        }
         .box-tip-amount, .box-total-person{
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            height: 35px;
+            text-align: center;
+            background-color: $strong-cyan;
+            border: none;
+            border-radius: 3px;
+            text-transform: uppercase;
+            color: $very-dark-cyan;
+            font-family: 'Space Mono', monospace;
+            font-weight: bold;
+            cursor: pointer;
+            &:disabled{
+                opacity: 0.2;
+                cursor: default;
+            }
+            &:hover{
+                background: $light-cyan;
+            }    
         }
     }
 }

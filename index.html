@@ -18,7 +18,7 @@
 
   <div class="container">
     <div class="box-donnees">
-      <p>Bill</p>
+      <p class="enter-bill-amount">Bill</p>
       <input class="bill" type="number" placeholder="0"></input>
       <p>Select Tip %</p>
       <div class="box-button">
@@ -33,13 +33,15 @@
       <input class="people" type="text">
     </div>
     <div class="box-resultats">
-      <div class="box-tip-amount">
-        <p>Tip-amount <br> /pers</p>
-        <span class="tip_amount">$0.0</span>
-      </div>
-      <div class="box-total-person">
-        <p>Total <br>/pers</p>
-        <span class="bill_amount">$0.0</span>
+      <div class="box-amounts">
+        <div class="box-tip-amount">
+          <p>Tip Amount <br> <span>/pers</span></p>
+          <span class="tip_amount">$0.0</span>
+        </div>
+        <div class="box-total-person">
+          <p>Total <br> <span>/pers</span></p>
+          <span class="bill_amount">$0.0</span>
+        </div>
       </div>
       
       <button class="reset" type="button" disabled>Reset</button>

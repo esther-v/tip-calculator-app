@@ -19,6 +19,7 @@ h1 {
   color: #00494d;
   letter-spacing: 8px;
   font-size: 26px;
+  font-weight: lighter;
 }
 
 .container {
@@ -27,32 +28,113 @@ h1 {
   background: white;
   padding: 20px;
   border-radius: 10px;
+  width: 650px;
 }
-.container .box-button button {
+.container input {
+  background: #f4fafa;
+  font-family: "Space Mono", monospace;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+}
+.container input:focus {
+  outline: 2px solid #26c0ab;
+}
+.container .box-donnees {
+  width: 50%;
+  padding: 10px;
+}
+.container .box-donnees p {
+  margin-bottom: 5px;
+}
+.container .box-donnees p:not(.enter-bill-amount) {
+  margin-top: 20px;
+}
+.container .box-donnees .box-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .box-donnees .box-button input {
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
+.container .box-donnees .box-button input:hover {
+  border: 1px solid #26c0ab;
+}
+.container .box-donnees .box-button button {
+  cursor: pointer;
   background: #00494d;
   border: none;
   border-radius: 3px;
   padding: 5px 10px;
   color: white;
   width: 60px;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
 }
-.container .box-button button:hover {
+.container .box-donnees .box-button button:hover {
   background: #26c0ab;
   color: #00494d;
 }
-.container .box-button .btn-active {
-  background: blue;
+.container .box-donnees .box-button .btn-active {
+  background: #26c0ab;
+  color: #00494d;
 }
 .container .box-resultats {
   width: 50%;
   background: #00494d;
   color: white;
-  padding: 15px;
+  padding: 35px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .box-resultats .box-amounts p {
+  font-size: 15px;
+  line-height: 15px;
+}
+.container .box-resultats .box-amounts p span {
+  font-size: 13px;
+  color: #c5e4e7;
+  font-weight: normal;
+}
+.container .box-resultats .box-amounts .box-tip-amount {
+  margin-bottom: 20px;
+}
+.container .box-resultats .box-amounts span {
+  font-size: 30px;
+  color: #26c0ab;
 }
 .container .box-resultats .box-tip-amount, .container .box-resultats .box-total-person {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.container .box-resultats button {
+  height: 35px;
+  text-align: center;
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #00494d;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .box-resultats button:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+.container .box-resultats button:hover {
+  background: #c5e4e7;
 }
 
 /*# sourceMappingURL=style.css.map */

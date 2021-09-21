@@ -1,18 +1,18 @@
 const tipCalculator = () => {
-    //variables staying private
+    //private variables 
     let bill = 0;
     let tipPercent = 0;
-    // at least one person has to pay the bill
+    // at least one person pays the bill
     let nOfPeople = 1;
     let lastActiveBtn = '';
 
     //bill input listener
     document.querySelector('.bill').oninput = (e) => {
-        bill = e.srcElement.value;
+        bill = e.target.value;
         updateTotal();
     }
 
-    //tip input listener
+    //tip percent input listener
     document.querySelector('.box-button').addEventListener('click', (e) => {
         e.preventDefault();
         if (e.target.dataset.tipSetter) {
@@ -29,13 +29,13 @@ const tipCalculator = () => {
 
     //tip custom listener
     document.querySelector('.tip-calc-custom').oninput = (e) => {
-        tipPercent = (e.srcElement.value < 0) ? 0 : e.srcElement.value;
+        tipPercent = (e.target.value < 0) ? 0 : e.target.value;
         updateTotal();
     }
 
     //number of people listener
     document.querySelector('.people').oninput = (e) => {
-        nOfPeople = (e.srcElement.value > 0) ? e.srcElement.value : 1;
+        nOfPeople = (e.target.value > 0) ? e.target.value : 1;
         updateTotal();
         
     }
