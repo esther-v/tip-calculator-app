@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Space Mono', monospace;
     display: flex;
@@ -16,7 +15,6 @@ body{
     height: 100vh;
     background: $light-cyan;
 }
-
 h1{
     color: $very-dark-cyan;
     letter-spacing: 8px;
@@ -88,7 +86,6 @@ h1{
             } 
         }
     }
- 
     .box-resultats{
         width: 50%;
         background: $very-dark-cyan;

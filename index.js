@@ -1,5 +1,5 @@
 const tipCalculator = () => {
-    //private variables 
+    
     let bill = 0;
     let tipPercent = 0;
     // at least one person pays the bill
@@ -18,7 +18,7 @@ const tipCalculator = () => {
         if (e.target.dataset.tipSetter) {
             tipPercent = e.target.value;
             //toggle the active class to show button is pressed
-            let btnToggled = e.target.classList.toggle('btn-active');
+            e.target.classList.toggle('btn-active');
             //if first time pressing button dont toggle last active button
             if (lastActiveBtn) lastActiveBtn.classList.toggle('btn-active');
             //remember last active button
